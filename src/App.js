@@ -36,7 +36,7 @@ function App() {
 				<nav className="nav">
 					<ul className="nav__list">
 						<li className="nav__item nav__item_active">
-							<a href="#1" className="nav__link nav__link_active">
+							<a href="" className="nav__link nav__link_active">
 								<span className="nav__link-text">	
 &#9742; &#8201;&#8201;Обо мне</span></a>
 						</li>
@@ -94,12 +94,12 @@ function App() {
 			<ul className="socials">
 				<li className="socials__item">
 					<li className="socials__item">
-					<a href="" className="socials__link socials__link_tw"></a>
+					<a href="https://twitter.com/" target="_blank" className="socials__link socials__link_tw"></a>
 				</li>
-					<a href="" className="socials__link socials__link_fb"></a>
+					<a href="https://ru-ru.facebook.com/" target="_blank" className="socials__link socials__link_fb"></a>
 				</li>
 				<li className="socials__item">
-					<a href="" className="socials__link socials__link_vk"></a>
+					<a href="https://vk.com/feed" target="_blank" className="socials__link socials__link_vk"></a>
 				</li>			
 			</ul>
 		</div>
