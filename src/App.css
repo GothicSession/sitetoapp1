@@ -524,7 +524,7 @@ footer {
   height: 3.125rem;
   width: 100%;
   min-width: 60rem;
-  margin-top: -3.125rem;
+  /* margin-top: -3.125rem; */
   position: relative;
 }
 
@@ -926,4 +926,8 @@ footer {
     width: auto;
   }
 }
+.content {
+  min-height: calc(100vh - 250px);
+}
+	
 /*# sourceMappingURL=main.css.map */

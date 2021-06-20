@@ -1,7 +1,7 @@
-import logo from './logo.svg';
 import './App.css';
 import React, { Component }  from 'react';
-import ReactDOM from 'react-dom'
+import ReactDOM from 'react-dom';
+
 
 function App() {
   return (
@@ -41,7 +41,7 @@ function App() {
 						</li>
 						<li className="nav__item">
 							<a href="career.html" className="nav__link nav__link_active"><span className="nav__link-text">	
-&#128640;&#8201;&#8201; Карьерный путь.</span></a>
+&#128640;&#8201;&#8201; Карьерный путь</span></a>
 						</li>
 						<li className="nav__item">
 							<a href="#3" className="nav__link nav__link_active"><span className="nav__link-text">	
@@ -84,7 +84,28 @@ function App() {
 	</div>
 	<div className="empty"></div>
 </div>
+<footer className="footer">
+	<div className="container">
+		<div className="footer__left">
+				&#xA9; Дизайн сайта был разработан Билдаевым Артемом
+		</div>
+		<div className="footer__right">
+			<ul className="socials">
+				<li className="socials__item">
+					<li className="socials__item">
+					<a href="" className="socials__link socials__link_tw"></a>
+				</li>
+					<a href="" className="socials__link socials__link_fb"></a>
+				</li>
+				<li className="socials__item">
+					<a href="" className="socials__link socials__link_vk"></a>
+				</li>			
+			</ul>
+		</div>
+	</div>
+</footer>
     </div>
+	
   );
 }
 
