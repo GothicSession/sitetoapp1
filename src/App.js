@@ -1,3 +1,4 @@
+import aboutpic from './img/content/me.jpg';
 import './App.css';
 import React, { Component }  from 'react';
 import ReactDOM from 'react-dom';
@@ -54,7 +55,7 @@ function App() {
 				<div className="about">
 					<div className="about__left">
 						<div className="about__pic">
-							<img src="img/content/me.jpg" className="about__pic-img"/>
+							<img src={aboutpic} className="about__pic-img"/>
 						</div>
 					</div>
 					<div className="about__right">

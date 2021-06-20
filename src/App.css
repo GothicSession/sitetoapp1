@@ -486,7 +486,7 @@ textarea {
   color: #33c1e3;
   text-decoration: none;
   font-size: 1.0625rem;
-  /* background: url("img/header/dot.png") 0 bottom repeat-x; */
+  background: url("./img/header/dot.png") 0 bottom repeat-x; 
   padding-top: 1.675rem;
 }
 
@@ -501,7 +501,7 @@ textarea {
   vertical-align: middle;
   width: 3.75rem;
   height: 3.75rem;
-  /* background: url("img/header/avatar.jpg"); */
+  background: url("img/header/avatar.jpg"); 
   border: 0.0625rem solid #bebebe;
   border-radius: 1.875rem;
 }
@@ -571,7 +571,7 @@ footer {
 .socials__link_fb {
   display: inline-block;
   vertical-align: right;
-  /* background: url("img/footer/fb.png"); */
+  background: url("img/footer/fb.png"); 
   height: 1.875rem;
   width: 1.875rem;
   margin-top: 0.625rem;
@@ -582,7 +582,7 @@ footer {
 .socials__link_vk {
   display: inline-block;
   vertical-align: right;
-  /* background: url("img/footer/vk.png"); */
+  background: url("img/footer/vk.png"); 
   height: 1.875rem;
   width: 1.875rem;
   margin-top: 0.625rem;
@@ -593,7 +593,7 @@ footer {
 .socials__link_tw {
   display: inline-block;
   vertical-align: right;
-  /* background: url("img/footer/tw.png"); */
+  background: url("img/footer/tw.png"); 
   height: 1.875rem;
   width: 1.875rem;
   margin-top: 0.625rem;
