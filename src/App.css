@@ -29,7 +29,7 @@
   font-weight: normal;
   font-style: normal;
 }  
-.socials__link:after, footer:after, .contacts:after, .header:after {
+.socials__link:after, .footer:after, .contacts:after, .header:after {
   content: "";
   display: block;
   clear: both;
@@ -60,49 +60,16 @@ ul {
   margin: 0;
 }
 
-/*! normalize.css v4.1.1 | MIT License | github.com/necolas/normalize.css */
+
 /**
  * 1. Change the default font family in all browsers (opinionated).
  * 2. Prevent adjustments of font size after orientation changes in IE and iOS.
  */
-html {
-  font-family: sans-serif;
-  /* 1 */
-  -ms-text-size-adjust: 100%;
-  /* 2 */
-  -webkit-text-size-adjust: 100%;
-  /* 2 */
-}
 
-/**
- * Remove the margin in all browsers (opinionated).
- */
-body {
-  margin: 0;
-}
 
-/* HTML5 display definitions
-   ========================================================================== */
-/**
- * Add the correct display in IE 9-.
- * 1. Add the correct display in Edge, IE, and Firefox.
- * 2. Add the correct display in IE.
- */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-main,
-menu,
-nav,
-section,
-summary {
-  /* 1 */
-  display: block;
-}
+
+
+
 
 /**
  * Add the correct display in IE 9-.
@@ -249,7 +216,7 @@ sup {
  * Remove the border on images inside links in IE 10-.
  */
 img {
-  border-style: none;
+  /* border-style: none; */
 }
 
 /**
@@ -465,7 +432,7 @@ textarea {
   /* 1 */
   font: inherit;
   /* 2 */
-}
+} 
 
 .header {
   background: #fff;
@@ -519,12 +486,12 @@ textarea {
   padding-top: 0.6rem;
 }
 
-footer {
+.footer {
   background: #414141;
   height: 3.125rem;
   width: 100%;
   min-width: 60rem;
-  /* margin-top: -3.125rem; */
+  margin-top: -3.125rem;  
   position: relative;
 }
 
@@ -644,11 +611,18 @@ footer {
   }
 }
 @media screen and (max-width: 768px) {
-  .nav__item .nav__list {
+  .nav__item {
     text-align: left;
   }
 }
-
+@media screen and (max-width:768px) {
+  .nav__list{
+    text-align: center;
+  }
+}
+@media screen and(max-width:320px) {
+  
+}
 .page-content {
   width: 43.75rem;
 }
@@ -656,6 +630,11 @@ footer {
   .page-content {
     width: 100%;
     float: none;
+  }
+}
+@media screen and (max-height:610px) {
+  .footer{
+    margin-top: 0;
   }
 }
 
@@ -907,6 +886,10 @@ footer {
     width: 9.0625rem;
     height: 9.0625rem;
   }
+  .about_car__pic-img{
+    width: 9.0625rem;
+    height: 9.0625rem;
+  }
 }
 @media screen and (max-width: 768px) {
   html {
@@ -915,6 +898,12 @@ footer {
 
   .container {
     width: 470px;
+  }
+  .footer{
+    min-width: 0px;
+  }
+  .about_car__pic-img{
+    border-radius: 4px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -926,8 +915,15 @@ footer {
     width: auto;
   }
 }
-.content {
-  min-height: calc(100vh - 250px);
+.Bio{
+  height: 100%;
+  overflow: hidden;
+  position: relative;
 }
-
+#root{
+  height: 100%;
+}
+.wrapper{
+min-height: 100vh;
+}
 /*# sourceMappingURL=main.css.map */

@@ -27,6 +27,7 @@ class About extends Component {
 		super();
 		this.state = {
 			value: null,
+			StyleSheet:100
 		};
 		};
 		render() {
@@ -105,9 +106,8 @@ class About extends Component {
 				</main>
 			</div>
 		</div>
-		<div className="empty"></div>
 	</div>
-	<footer className="footer">
+	<div className="footer">
 		<div className="container">
 			<div className="footer__left">
 					&#xA9; Дизайн сайта был разработан Билдаевым Артемом
@@ -126,8 +126,7 @@ class About extends Component {
 				</ul>
 			</div>
 		</div>
-	</footer>
-	
+	</div>
 	</div>
 	)
 }}
@@ -165,80 +164,80 @@ class Career extends Component{
 				</div>
 			</header>
 		</div>
-		<div class="content">
-			<div class="container">
-				<aside class="sidebar">
-					<nav class="nav">
-						<ul class="nav__list">
+		<div className="content">
+			<div className="container">
+				<aside className="sidebar">
+					<nav className="nav">
+						<ul className="nav__list">
 						<li className="nav__item nav__item_active">
 							<Router><Link className="nav__link nav__link_active" to="/about"><span className="nav__link-text">Обо мне</span></Link></Router>
 							</li>
 							<li className="nav__item nav__item_active">
               <Router><Link className="nav__link nav__link_active" to="/career"><span className="nav__link-text">Карьера</span></Link></Router>
             	</li>
-							<li class="nav__item">
-								<a href="#3" class="nav__link nav__link_active"><span class="nav__link-text">	
+							<li className="nav__item">
+								<a href="#3" className="nav__link nav__link_active"><span className="nav__link-text">	
 						 Портфолио</span></a>
 							</li>
 						</ul>
 					</nav>
 				</aside>
-				<main class="page-content">
-					<div class="about">
-						<div class="about__left">
-							<div class="about__title"><span>Карьерный путь</span></div>
-							<div class="about_car__pic">
+				<main className="page-content">
+					<div className="about">
+						<div className="about__left">
+							<div className="about__title"><span>Карьерный путь</span></div>
+							<div className="about_car__pic">
 								<img src={careerpic} className="about_car__pic-img"/>
 							</div>
 						</div>
-						<div class="about__right">
-							<div class="title">
+						<div className="about__right">
+							<div className="title">
 							</div>
-							<ul class="career__list">
-								<li class="career__item">
-									<div class="career__block">
-										<div class="career__title">
+							<ul className="career__list">
+								<li className="career__item">
+									<div className="career__block">
+										<div className="career__title">
 											ПАО "МТС"
 										</div>
-										<div class="career__occ">
+										<div className="career__occ">
 											Модератор сайта WASD-TV
 										</div>
-										<div class="career__date">
+										<div className="career__date">
 											2020-Настоящее время
 										</div>
-										<div class="career__year">
+										<div className="career__year">
 											2020
 										</div>
 									</div>
 								</li>
-								<li class="career__item">
-									<div class="career__block">
-										<div class="career__title">
+								<li className="career__item">
+									<div className="career__block">
+										<div className="career__title">
 											РТУ МИРЭА - Российский технологический университет
 										</div>
-										<div class="career__occ">
+										<div className="career__occ">
 											Студент
 										</div>
-										<div class="career__date">
+										<div className="career__date">
 											2020-Настоящее время
 										</div>
-										<div class="career__year">
+										<div className="career__year">
 											2020
 										</div>
 									</div>
 								</li>
-								<li class="career__item">
-									<div class="career__block">
-										<div class="career__title">
+								<li className="career__item">
+									<div className="career__block">
+										<div className="career__title">
 											МБОУ Лицей-интернат N1
 										</div>
-										<div class="career__occ">
+										<div className="career__occ">
 											Ученик
 										</div>
-										<div class="career__date">
+										<div className="career__date">
 											2014-2019
 										</div>
-										<div class="career__year">
+										<div className="career__year">
 											2014
 										</div>
 									</div>
