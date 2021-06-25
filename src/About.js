@@ -3,8 +3,7 @@ import './App.css';
 import React, { Component }  from 'react';
 import ReactDOM from 'react-dom';
 import { HashRouter as Router,Switch, Route, Link } from "react-router-dom";
-
-
+import tgpic from './img/header/tgsvg.svg';
 
 
 class About extends Component {
@@ -29,11 +28,19 @@ class About extends Component {
 					</div>
 					<div className="header__right">
 						<div className="contacts">
-								<a href="#" className="contacts__link">Мои контакты</a>
-								<ul className="contacts__dropdown">
-									<li className="contacts__dropdown-item"></li>
-									<li className="contacts__dropdown-item"></li>
-									<li className="contacts__dropdown-item"></li>
+								<a href="#"  className="contacts__link" onClick={openMenu}>Мои контакты</a>
+								<ul id="contacts__dropdown" className="contacts__dropdown">
+									<li className="contacts__dropdown-item">
+                                        <div className="contacts__dropdown-item-tg">
+                                        <img src={tgpic} className="contacts__dropdown-item-tg-pic"/>
+                                        <span className="contacts__dropdown-item-tg-text">TG: artemsenssei</span>
+                                        </div>
+                                    </li>
+									<li className="contacts__dropdown-item">
+                                        <div className="contacts__dropdown-item-email">
+
+                                        </div>
+                                    </li>
 								</ul>
 							</div>
 					</div>
@@ -115,4 +122,8 @@ class About extends Component {
 	)
 }}
 
+
+function openMenu(){
+    document.getElementById("contacts__dropdown").classList.toggle('contacts__dropdown-active');
+}
 export default About;

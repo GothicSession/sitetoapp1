@@ -83,6 +83,7 @@ ul {
   font-size: 1.0625rem;
   background: url("./img/header/dot.png") 0 bottom repeat-x; 
   padding-top: 1.675rem;
+  cursor: pointer;
 }
 
 .contacts {
@@ -547,4 +548,38 @@ ul {
 }
 .wrapper{
 min-height: 100vh;
+}
+.contacts__dropdown{
+  position: absolute;
+  height: 80px;
+  width: 200px;
+  background: white;
+  border-radius: 5px;
+  float:right;
+  margin: -27px 10px;
+  box-shadow: 0 0 5px #414141;
+  margin-top: -150px;
+  margin-left: 170px;
+  -moz-transition: all 300ms;
+  -webkit-transition: all 300ms;
+  transition: all 300ms;
+}
+.contacts__dropdown-item{
+  text-align: center;
+  vertical-align: middle;
+  height: 50%;
+}
+.contacts__dropdown-item-tg-pic{
+  height: 40px;
+  width: 40px;
+  
+}
+
+.contacts__dropdown-item-tg-text{
+  display: block;
+  color:#414141;
+}
+.contacts__dropdown-active{
+
+  margin-top:-50px;
 }
