@@ -3,6 +3,7 @@ import './App.css';
 import React, { Component }  from 'react';
 import { HashRouter as Router,Switch, Route, Link } from "react-router-dom";
 import {HashRouter} from 'react-router-dom';
+import tgpic from './img/header/tgsvg.svg';
 
 
 
@@ -29,11 +30,19 @@ class Career extends Component{
 					</div>
 					<div className="header__right">
 						<div className="contacts">
-								<a href="#" className="contacts__link">Мои контакты</a>
-								<ul className="contacts__dropdown">
-									<li className="contacts__dropdown-item"></li>
-									<li className="contacts__dropdown-item"></li>
-									<li className="contacts__dropdown-item"></li>
+								<span  className="contacts__link unselectable" onClick={openMenu}>Мои контакты</span>
+								<ul id="contacts__dropdown" className="contacts__dropdown">
+									<li className="contacts__dropdown-item">
+                                        <div className="contacts__dropdown-item-tg">
+                                        <img src={tgpic} className="contacts__dropdown-item-tg-pic"/>
+                                        <span className="contacts__dropdown-item-tg-text">TG: artemsenssei</span>
+                                        </div>
+                                    </li>
+									<li className="contacts__dropdown-item">
+                                        <div className="contacts__dropdown-item-email">
+
+                                        </div>
+                                    </li>
 								</ul>
 							</div>
 					</div>
@@ -149,5 +158,7 @@ class Career extends Component{
 	</div>
 	)
 }}
-
+function openMenu(){
+    document.getElementById("contacts__dropdown").classList.toggle('contacts__dropdown-active');
+}
 export default Career;

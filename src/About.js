@@ -28,7 +28,7 @@ class About extends Component {
 					</div>
 					<div className="header__right">
 						<div className="contacts">
-								<a href="#"  className="contacts__link" onClick={openMenu}>Мои контакты</a>
+								<span  className="contacts__link unselectable" onClick={openMenu}>Мои контакты</span>
 								<ul id="contacts__dropdown" className="contacts__dropdown">
 									<li className="contacts__dropdown-item">
                                         <div className="contacts__dropdown-item-tg">
